@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    line-height: 80px;
+    position: fixed;
+    top: 0;
+}
+
+.contained {
+    width: 90%;
+    margin: auto;
+}
+
+.jumbo {
+    height: 880px;
+}
+
+.colored {
+    height: 800px;
+    background-color: #B4D0E7;
+}
+
+.jumbo.contained {
+    padding-top: 140px
+}
