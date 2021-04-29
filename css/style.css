@@ -16,8 +16,8 @@ body {
     clear: both;
 }
 
-.contained {
-    width: 92%;
+.scontained {
+    width: 85%;
     margin: auto;
 }
 
@@ -58,6 +58,24 @@ a {
 
 .small {
     font-size: 13px;
+}
+
+section {
+    padding-top: 10%;
+}
+
+.normal {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+input[type = radio] {
+    transform: scale(1.5);
+    margin-right: 5px;
+}
+
+label {
+    margin-right: 40px;
 }
 
 /* navigation bar  */
@@ -116,8 +134,10 @@ nav li:hover {
     background-color: #B4D0E7;
 }
 
-.jumbo .contained {
-    padding-top: 5%
+.jcontained {
+    padding-top: 5%;
+    width: 92%;
+    margin: auto;
 }
 
 .jumbo-left {
@@ -129,11 +149,6 @@ nav li:hover {
     font-size: 57px;
     letter-spacing: -1px;
     transform: scaleY(1.4);
-}
-
-.jumbo p {
-    font-size: 18px;
-    line-height: 26px;
 }
 
 .jumbo .btn {
@@ -153,4 +168,26 @@ nav li:hover {
 
 .arrow:hover {
     cursor: pointer;
+}
+
+/* sezione abbonamenti */
+
+.titolo {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.radios {
+    margin: 50px 0;
+}
+
+.planscol {
+    width: calc(100% / 3 - 4%);
+    border: 1px solid #D0D0D0;
+
+    height: 200px;
+}
+
+.colonne > *:not(:first-child) {
+    margin-left: 6%;
 }
