@@ -17,7 +17,7 @@ body {
 }
 
 .contained {
-    width: 90%;
+    width: 92%;
     margin: auto;
 }
 
@@ -44,6 +44,18 @@ a {
     color: white;
 }
 
+.btn:not(nav .btn) {
+    display: inline-block;
+}
+
+.big-btn {
+    padding: 10px 25px;
+}
+
+.small {
+    font-size: 13px;
+}
+
 /* navigation bar  */
 
 nav {
@@ -56,6 +68,7 @@ nav {
     padding: 0 20px;
     font-size: 14px;
     letter-spacing: 0.5px;
+    z-index: 99;
 }
 
 nav * {
@@ -84,14 +97,47 @@ nav li:hover {
 }
 
 .jumbo {
-    height: 880px;
+    margin-top: 80px;
+    padding-bottom: 4%;
+    position: relative;
 }
 
 .colored {
-    height: 800px;
+    padding-bottom: 4%;
     background-color: #B4D0E7;
 }
 
-.jumbo.contained {
-    padding-top: 140px
+.jumbo .contained {
+    padding-top: 5%
+}
+
+.jumbo-left {
+    padding-top: 6%;
+    width: 30%;
+}
+
+.jumbo h1 {
+    font-size: 57px;
+    letter-spacing: -1px;
+    transform: scaleY(1.4);
+}
+
+.jumbo p {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.jumbo .btn {
+    margin: 20px 0 15px;
+}
+
+.arrow {
+    font-size: 95px;
+}
+
+#jumbo-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 67%;
 }
