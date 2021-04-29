@@ -44,6 +44,10 @@ a {
     color: white;
 }
 
+.btn:hover {
+    cursor: pointer;
+}
+
 .btn:not(nav .btn) {
     display: inline-block;
 }
@@ -96,6 +100,11 @@ nav li:hover {
     border-bottom: 2px solid black;
 }
 
+#logo:hover {
+    cursor: pointer;
+}
+
+
 .jumbo {
     margin-top: 80px;
     padding-bottom: 4%;
@@ -140,4 +149,8 @@ nav li:hover {
     bottom: 0;
     right: 0;
     max-width: 67%;
+}
+
+.arrow:hover {
+    cursor: pointer;
 }
