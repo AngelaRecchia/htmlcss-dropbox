@@ -4,6 +4,48 @@
     box-sizing: border-box;
 }
 
+/* common */
+
+body {
+    font-family: 'Noto Sans', Helvetica;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contained {
+    width: 90%;
+    margin: auto;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn {
+    padding: 6px 20px;
+    background-color: #0061FF;
+    color: white;
+}
+
+/* navigation bar  */
+
 nav {
     height: 80px;
     width: 100%;
@@ -11,11 +53,26 @@ nav {
     line-height: 80px;
     position: fixed;
     top: 0;
+    padding: 0 20px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
 }
 
-.contained {
-    width: 90%;
-    margin: auto;
+nav * {
+    vertical-align: middle;
+    display: inline;
+}
+
+#logo {
+    max-width: 130px;
+}
+
+nav .float-left li {
+    margin-left: 25px;
+}
+
+nav .float-right li {
+    margin-right: 25px;
 }
 
 .jumbo {
