@@ -20,6 +20,18 @@ html {
     clear: both;
 }
 
+.abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+section {
+    padding-top: 10%;
+}
+
 .scontained {
     width: 85%;
     margin: auto;
@@ -48,7 +60,7 @@ a {
     color: white;
 }
 
-.btn:hover {
+.btn:hover:not(.not-bright) {
     filter: brightness(1.5);
 }
 
@@ -73,18 +85,20 @@ a {
     font-weight: normal;
 }
 
-section {
-    padding-top: 10%;
-}
-
 .normal {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 26px;
     letter-spacing: 0.2px;
 }
 
 .bold {
     font-weight: bold;
+}
+
+.bold-title {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 input[type = radio] {
@@ -108,7 +122,7 @@ nav {
     padding: 0 20px;
     font-size: 14px;
     letter-spacing: 0.5px;
-    z-index: 99;
+    z-index: 999;
     border-bottom: 1px solid #D0D0D0;
 }
 
@@ -231,11 +245,6 @@ nav li:hover {
     width: 20%;
 }
 
-.plan-spec .type {
-    font-size: 25px;
-    font-weight: bold;
-}
-
 .every {
     color: #637381;
     margin-bottom: 17%;
@@ -309,7 +318,7 @@ nav li:hover {
 
 /* list-type con immagine */
 .highlights ul {
-    margin-left: 17px;   
+    margin-left: 17px;
 }
 
 .highlights ul li::before {
@@ -323,3 +332,39 @@ nav li:hover {
     margin-left: -17px;
 }
 
+/* sezione partner */
+
+.p-row {
+    position: relative;
+}
+
+.pimg {
+    width: 57%;
+}
+
+.ptext {
+    width: 43%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.pimg img {
+    width: 100%;
+}
+
+.p-row .abs-center {
+    width: 100%;
+    padding-left: 15%;
+}
+
+.p-row .abs-center p {
+    margin: 30px 0 35px;
+}
+
+.p-row .big-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
