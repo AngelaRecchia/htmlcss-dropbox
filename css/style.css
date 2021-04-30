@@ -91,12 +91,21 @@ a {
     letter-spacing: 0.2px;
 }
 
+.slim {
+    font-size: 16px;
+    line-height: 26px;
+}
+
 .bold {
     font-weight: bold;
 }
 
+.underlined {
+    text-decoration: underline;
+}
+
 .bold-title {
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bold;
     letter-spacing: 0.5px;
 }
@@ -207,11 +216,14 @@ nav li:hover {
     margin: 50px 0;
 }
 
-.plan-col {
+.col {
     width: calc(100% / 3 - 4%);
+    min-width: 300px;
+}
+
+.plans .col {
     height: 830px;
     border: 1px solid #D0D0D0;
-    min-width: 300px;
 }
 
 .plan-row {
@@ -219,7 +231,7 @@ nav li:hover {
     border: 1px solid #D0D0D0;
 }
 
-.plans .row > *:not(:first-child) {
+.col:not(:first-child) {
     margin-left: 6%;
 }
 
@@ -250,7 +262,7 @@ nav li:hover {
     margin-bottom: 17%;
 }
 
-.plan-col .plan-spec *:not( .try-buy, .try-buy > *, :first-child) {
+.plans .col .plan-spec *:not( .try-buy, .try-buy > *, :first-child) {
     margin-top: 15px;
 }
 
@@ -334,15 +346,15 @@ nav li:hover {
 
 /* sezione partner */
 
-.p-row {
+.ptner-row {
     position: relative;
 }
 
-.pimg {
+.ptner-img {
     width: 57%;
 }
 
-.ptext {
+.ptner-text {
     width: 43%;
     height: 100%;
     position: absolute;
@@ -350,21 +362,35 @@ nav li:hover {
     top: 0;
 }
 
-.pimg img {
+.ptner-img img {
     width: 100%;
 }
 
-.p-row .abs-center {
+.ptner-row .abs-center {
     width: 100%;
     padding-left: 15%;
 }
 
-.p-row .abs-center p {
+.ptner-row .abs-center p {
     margin: 30px 0 35px;
 }
 
-.p-row .big-btn {
+.ptner-row .big-btn {
     background-color: white;
     color: black;
     border: 1px solid black;
+}
+
+/* sezione operazioni */
+
+.doable .row {
+    margin: 4% 0;
+}
+
+.doable img {
+    width: 100%;
+}
+
+.doable .bold-title {
+    margin: 5% 0;
 }
