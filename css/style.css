@@ -57,7 +57,12 @@ a {
 }
 
 .big-btn {
-    padding: 3% 9%;
+    padding: 10px 30px;
+}
+
+.extended-btn {
+    width: 100%;
+    text-align: center;
 }
 
 .small {
@@ -190,9 +195,14 @@ nav li:hover {
 
 .plan-col {
     width: calc(100% / 3 - 4%);
-    height: 800px;
+    height: 830px;
     border: 1px solid #D0D0D0;
     min-width: 300px;
+}
+
+.plan-row {
+    margin-top: 50px;
+    border: 1px solid #D0D0D0;
 }
 
 .plans .row > *:not(:first-child) {
@@ -210,7 +220,15 @@ nav li:hover {
 }
 
 .plan-spec {
-    padding: 20px 30px;
+    padding: 30px;
+}
+
+.plan-row .row-text {
+    width: 80%;
+}
+
+.plan-row .row-button {
+    width: 20%;
 }
 
 .plan-spec .type {
@@ -223,8 +241,12 @@ nav li:hover {
     margin-bottom: 17%;
 }
 
-.plan-spec *:not( .try-buy, .try-buy > *) {
-    margin-top: 10px;
+.plan-col .plan-spec *:not( .try-buy, .try-buy > *, :first-child) {
+    margin-top: 15px;
+}
+
+.plan-row .row-text > *:not(:first-child) {
+    margin-top: 20px;
 }
 
 /* icone con list-style */
@@ -264,11 +286,6 @@ nav li:hover {
     position: relative;
 }
 
-.try-buy .btn {
-    width: 100%;
-    text-align: center;
-}
-
 .try-buy div.small {
     padding: 20px 0 30px;
 }
@@ -292,8 +309,7 @@ nav li:hover {
 
 /* list-type con immagine */
 .highlights ul {
-    margin-left: 17px;
-    padding: 5px 0 20px;    
+    margin-left: 17px;   
 }
 
 .highlights ul li::before {
