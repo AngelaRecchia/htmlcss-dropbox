@@ -119,6 +119,10 @@ label {
     margin-right: 40px;
 }
 
+.col:not(:first-child) {
+    margin-left: 6%;
+}
+
 /* navigation bar  */
 
 nav {
@@ -222,7 +226,7 @@ nav li:hover {
 }
 
 .plans .col {
-    height: 830px;
+    height: 850px;
     border: 1px solid #D0D0D0;
 }
 
@@ -231,18 +235,10 @@ nav li:hover {
     border: 1px solid #D0D0D0;
 }
 
-.col:not(:first-child) {
-    margin-left: 6%;
-}
-
 .plan-for {
     border-bottom: 1px solid #D0D0D0;
     text-align: center;
     padding: 10px;
-}
-
-.plan-for i {
-    margin-right: 5px;
 }
 
 .plan-spec {
@@ -262,7 +258,7 @@ nav li:hover {
     margin-bottom: 17%;
 }
 
-.plans .col .plan-spec *:not( .try-buy, .try-buy > *, :first-child) {
+.plans .col .plan-spec *:not( .try-buy, .try-buy > *, .bold-title) {
     margin-top: 15px;
 }
 
@@ -270,40 +266,32 @@ nav li:hover {
     margin-top: 20px;
 }
 
-/* icone con list-style */
-.plan-spec .font-icon {
-    margin-left: 14px;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
+.plan-for img, .plan-spec .infos img {
+    width: 16px;
+    margin-right: 5px;
 }
 
-.plan-spec ul span {
-    margin-left: 5px;
+.plan-for img {
+    width: 15px;
 }
 
-.plan-spec ul .user {
-    list-style: "\f007";
+.plan-spec .infos img:last-of-type{
+    vertical-align: top;
 }
 
-.plan-spec ul .folder {
-    list-style: "\f07b";
+.plan-spec .infos span {
+    display: inline-block;
+    width: 90%;
 }
 
-.plan-spec ul .pen {
-    list-style: "\f591";
-}
-
-.plan-spec ul .users {
-    list-style-type: "\f234";
-    margin-left: 4px;
-}
-
-.plan-spec ul .smile {
-    list-style-type: "\f4da";
-}
 
 .try-buy {
     margin-top: 23%;
+    position: relative;
+}
+
+#advanced .try-buy {
+    margin-top: 15%;
     position: relative;
 }
 
@@ -328,7 +316,6 @@ nav li:hover {
     padding: 15px 0;
 }
 
-/* list-type con immagine */
 .highlights ul {
     margin-left: 17px;
 }
@@ -384,7 +371,7 @@ nav li:hover {
 /* sezione operazioni */
 
 .doable .row {
-    margin: 4% 0;
+    margin: 4% 0 8%;
 }
 
 .doable img {
