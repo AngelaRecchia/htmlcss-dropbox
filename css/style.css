@@ -110,6 +110,12 @@ a {
     letter-spacing: 0.5px;
 }
 
+.blue-under {
+    color: #0061FF;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+}
+
 input[type = radio] {
     transform: scale(1.5);
     margin-right: 5px;
@@ -212,8 +218,9 @@ nav li:hover {
 /* sezione abbonamenti */
 
 .titolo {
-    font-size: 40px;
+    font-size: 45px;
     font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 .radios {
@@ -299,12 +306,6 @@ nav li:hover {
     padding: 20px 0 30px;
 }
 
-.try-buy  div a {
-    color: #0061FF;
-    text-decoration: underline;
-    text-decoration-thickness: 1.5px;
-}
-
 .border-partial {
     border-bottom: 1px solid #D0D0D0;
     position: absolute;
@@ -381,3 +382,52 @@ nav li:hover {
 .doable .bold-title {
     margin: 5% 0;
 }
+
+/* sezione teams */
+.teams .titolo {
+    width: 55%;
+}
+
+.teams .normal {
+    margin: 20px 0 40px;
+}
+
+.team-boxes {
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+}
+
+.box-img {
+    width: 50%;
+    height: 50%;
+    min-width: 150px;
+    position: relative;
+}
+
+.box-img .contain-img {
+    width: 150px;
+    height: 75px;
+}
+
+.box-img .contain-img img {
+    max-width:100%;
+    max-height:100%;
+    filter: invert(100%);
+}
+
+#designit {
+    background-color: #A2D39B;
+}
+
+#asu {
+    background-color: #61082B;
+}
+
+#uf {
+    background-color: #0093CE;
+}
+
+#topps {
+    background-color: #FF1C1C;
+}
+
