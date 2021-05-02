@@ -141,7 +141,7 @@ nav {
     height: 80px;
     width: 100%;
     background-color: #fff;
-    line-height: 75px;
+    line-height: 77px;
     position: fixed;
     top: 0;
     padding: 0 20px;
@@ -153,19 +153,24 @@ nav {
 
 nav *:not(.tendina *) {
     vertical-align: middle;
-    display: inline;
 }
 
 #logo {
     max-width: 130px;
 }
 
-nav .float-left li:not(.small) {
-    margin-left: 25px;
+nav .btn {
+    display: inline;
 }
 
-nav .float-right li:not(.small) {
+nav .float-left li:not(.small, .normal.bold) {
+    margin-left: 25px;
+    display: inline-block;
+}
+
+nav .float-right li:not(.small, .normal.bold) {
     margin-right: 25px;
+    display: inline-block;
 }
 
 nav ul li a:not(.a-drop) {
@@ -180,8 +185,8 @@ nav ul li a:not(.a-drop):hover {
 nav .tendina{
     display: none;
     background-color: #FAFAFA;
-    position: absolute;
-    top: 80px;
+    position: fixed;
+    margin-left: -25px;
     padding-bottom: 10px;
 }
 
@@ -200,11 +205,13 @@ nav ul > li:hover .tendina {
 nav .a-drop:hover {
     background-color: #EBEBEB;
 }
-
+ nav .tendina ul {
+     margin-top: 13px;
+ }
 nav ul li .normal.bold {
     padding: 10px 0;
     border-bottom: 1px solid #D0D0D0;
-    margin: 13px 30px 10px;
+    margin: 0px 30px 10px;
 }
 
 /* jumbotron */
