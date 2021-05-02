@@ -60,7 +60,7 @@ a {
     color: white;
 }
 
-.btn:hover:not(.not-bright) {
+.btn:hover:not(.white-btn) {
     filter: brightness(1.5);
 }
 
@@ -75,6 +75,12 @@ a {
 .extended-btn {
     width: 100%;
     text-align: center;
+}
+
+.white-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
 }
 
 .small {
@@ -363,12 +369,6 @@ nav li:hover {
     margin: 30px 0 35px;
 }
 
-.ptner-row .big-btn {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-}
-
 /* sezione operazioni */
 
 .doable .row:not(:last-of-type) {
@@ -532,65 +532,80 @@ nav li:hover {
     position: absolute;
 }
 
+/* testo mostrato di default */
+#text-designit .abs-text-center {
+    display: inline-block;
+}
+
 *:target .abs-text-center {
     display: inline-block;
 }
 
 #text-designit:target .box-border{
-    display: inline-block;
     left: calc( -100vw / 3);
-    top: 80px;
+    bottom: calc(100vw / 6);
     border: 10px solid #D1E9CD; 
 }
 
 #text-asu:target .box-border{
-    display: inline-block;
     left: calc( -100vw / 6);
-    top: 80px;
+    bottom: calc(100vw / 6);
     border: 10px solid #B08495; 
 }
 
 #text-uf:target .box-border{
-    display: inline-block;
     left: calc( -100vw / 3);
     bottom: 0;
     border: 10px solid #80C9E7; 
 }
 
 #text-topps:target .box-border{
-    display: inline-block;
     left: calc( -100vw / 6);
     bottom: 0;
     border: 10px solid #FF8E8E; 
 }
 
 #text-world-bic:target .box-border{
-    display: inline-block;
     right: calc(-100vw / 6);
-    top: 80px;
+    bottom: calc(100vw / 6);
     border: 10px solid #EA808F; 
 }
 
 #text-hearst:target .box-border{
-    display: inline-block;
     right: calc(-100vw / 3 + 1px);
-    top: 80px;
+    bottom: calc(100vw / 6);
     border: 10px solid #DAE8F3; 
 }
 
 #text-lonely:target .box-border{
-    display: inline-block;
     right: calc(-100vw / 6);
     bottom: 0;
     border: 10px solid #8692C0; 
 }
 
 #text-clear-ch:target .box-border{
-    display: inline-block;
     right: calc(-100vw / 3 + 1px);
     bottom: 0;
     border: 10px solid #FFEC98; 
 } 
+
+/* sezione trial */
+.trial{
+    background-color: #B4D0E7;
+    padding: 8.5% 0;
+}
+.trial .titolo {
+    color: #61082B;
+    width: 60%;
+}
+
+.trial .white-btn {
+    border: 0;
+}
+.trial .float-left:last-child {
+    width: 40%;
+    text-align: right;
+}
 
 
 
