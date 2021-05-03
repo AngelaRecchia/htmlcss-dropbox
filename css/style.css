@@ -28,7 +28,7 @@ html {
     z-index: 99;
 }
 
-section {
+section, footer {
     padding-top: 10%;
 }
 
@@ -201,7 +201,7 @@ nav .tendina ul {
 }
 
  nav .a-drop {
-     padding: 8px 0 8px 30px;
+     padding: 7px 0 7px 30px;
      display: block;
  }
 
@@ -284,11 +284,11 @@ nav ul li .normal.bold {
 }
 
 #individual.col {
-    padding-bottom: 57px;
+    padding-bottom: 37px;
 }
 
 #standard.col {
-    padding-bottom: 36px;
+    padding-bottom: 16px;
 }
 
 .plans .col {
@@ -707,6 +707,58 @@ nav ul li .normal.bold {
     display: none;
 }
 
+.faq, footer {
+    padding-bottom: 10%;
+}
+
+/* footer */
+
+footer {
+    background-color: black;
+}
+
+footer * {
+    color: white;
+}
+
+footer ul {
+    width: 20%;
+}
+
+footer ul .normal.bold {
+    padding-bottom: 15px;
+}
+
+footer ul .small {
+    padding-bottom: 10px;
+}
+
+.footbottom {
+    margin-top: 100px;
+}
+
+.border-white {
+    width: 100px;
+    border-top: 1.5px solid white;
+    margin-bottom: 50px;
+}
+
+ .lang *:not(i) {
+     color: #666666;
+ }
+
+ .lang i {
+     color: #C0C6CB;
+     font-size: 20px;
+     vertical-align: middle;
+ }
+ .lang span:last-child {
+     font-size: 10px;
+ }
+
+ .lang:hover {
+     cursor: pointer
+ }
 
 
 
