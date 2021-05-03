@@ -271,13 +271,21 @@ nav ul li .normal.bold {
     margin: 50px 0;
 }
 
+/* col si applica a sezione plans e operazioni */
 .col {
     width: calc(100% / 3 - 4%);
     min-width: 300px;
 }
 
+#individual.col {
+    padding-bottom: 57px;
+}
+
+#standard.col {
+    padding-bottom: 36px;
+}
+
 .plans .col {
-    height: 850px;
     border: 1px solid #D0D0D0;
 }
 
@@ -506,14 +514,6 @@ nav ul li .normal.bold {
     bottom: 0;
     left: calc(100vw / 3);
 }
-/* 
-
-.team-boxes.float-right .prevent-scroll { 
-    height: calc(100vw / 3 + 80px);
-    position:absolute;
-    bottom: 0;
-    right: calc( 100vw / 6);
-} */
 
 
 .abs-text-center {
