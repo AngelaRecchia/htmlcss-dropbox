@@ -174,17 +174,18 @@ nav .btn {
     float: left;
 }
 
-.menu .float-left > li > a {
+.menu .float-left li:not(.tendina *) {
     margin-left: 25px;
     display: inline-block;
 }
 
-.menu .float-right > li > a {
+.menu .float-right li:not(.tendina *) {
     margin-right: 25px;
     display: inline-block;
 }
 
 nav ul li a:not(.a-drop):hover {
+    padding-bottom: 28px;
     border-bottom: 2px solid black;
 }
 
@@ -194,6 +195,7 @@ nav .tendina{
     display: none;
     background-color: #FAFAFA;
     position: fixed;
+    top: 80px;
     margin-left: -25px;
     padding-bottom: 10px;
 }
@@ -739,8 +741,28 @@ footer ul .small {
  }
 
 .lang:hover {
-     cursor: pointer
+     cursor: pointer;
  }
+
+ /* elementi fissi */
+.chat {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: #0D2281;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 99;
+    box-shadow: 2px 2px 3px rgba(0 0 0 / 0.8);
+    cursor: pointer;
+}
+
+.chat i {
+    font-size: 30px;
+    color: white;
+    top: 25px;
+}
 
 
 
