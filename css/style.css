@@ -21,7 +21,7 @@ html {
 }
 
 .abs-center {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -161,6 +161,7 @@ nav *:not(.tendina *) {
     vertical-align: middle;
 }
 
+
 #logo {
     max-width: 130px;
 }
@@ -169,25 +170,26 @@ nav .btn {
     display: inline;
 }
 
-nav .float-left li:not(.small, .normal.bold) {
+.menu > ul > li {
+    float: left;
+}
+
+.menu .float-left > li > a {
     margin-left: 25px;
     display: inline-block;
 }
 
-nav .float-right li:not(.small, .normal.bold) {
+.menu .float-right > li > a {
     margin-right: 25px;
     display: inline-block;
 }
-
-nav ul li a:not(.a-drop) {
-    padding-bottom: 28px;
-} 
 
 nav ul li a:not(.a-drop):hover {
     border-bottom: 2px solid black;
 }
 
 /* menu a comparsa  */
+
 nav .tendina{
     display: none;
     background-color: #FAFAFA;
@@ -208,6 +210,7 @@ nav .tendina ul {
 nav ul > li:hover .tendina {
     display: block;
 }
+
 nav .a-drop:hover {
     background-color: #EBEBEB;
 }
@@ -349,7 +352,6 @@ nav ul li .normal.bold {
     width: 90%;
 }
 
-
 .try-buy {
     margin-top: 23%;
     position: relative;
@@ -468,11 +470,6 @@ nav ul li .normal.bold {
     max-height:100%;
 }
 
-/* eccezione per clear channel: non prende altezza max contenitore */
-#clear-ch .abs-center.white {
-    height: 75px;
-}
-
 .box-img .white {
     filter: invert(100%);
 }
@@ -509,7 +506,6 @@ nav ul li .normal.bold {
     background-color: #FFD830;
 }
 
-/* soluzione ambigua */
 .box-container {
     position: relative;
 }
@@ -623,6 +619,7 @@ nav ul li .normal.bold {
 } 
 
 /* sezione trial */
+
 .trial{
     background-color: #B4D0E7;
     padding: 8.5% 0;
@@ -656,28 +653,19 @@ nav ul li .normal.bold {
     position: relative;
 }
 
-.faq .q > .normal {
+.faq .question .normal {
     max-width: 65%;
     display: inline-block;
 }
 
-.faq .q .float-right.longer {
-    width: 15px;
-    position: absolute;
-    top: 50px;
-    right: 0;
+.faq .question {
+    position: relative;
 }
 
-.faq .q .float-right{
+.faq .question img {
     width: 15px;
     position: absolute;
-    top: 35px;
     right: 0;
-}
-
-
-.faq .q img {
-    width: 100%;
 }
 
 .faq .answer {
@@ -687,24 +675,17 @@ nav ul li .normal.bold {
     display: none;
 }
 
-.faq #chev-up {
-    display: none;
-}
-
 .faq .answer a {
     color: #637381;
 }
 
-.faq .q:hover .answer {
+.q:hover .answer {
     display: inline-block;
 }
 
-.faq .q:hover #chev-up {
-    display: inline-block;
-}
-
-.faq .q:hover #chev-down {
-    display: none;
+.q:hover img {
+    transform: rotate(-180deg);
+    transition: transform .2s ease-in-out;
 }
 
 .faq, footer {
@@ -743,20 +724,21 @@ footer ul .small {
     margin-bottom: 50px;
 }
 
- .lang *:not(i) {
+.lang *:not(i) {
      color: #666666;
  }
 
- .lang i {
+.lang i {
      color: #C0C6CB;
      font-size: 20px;
      vertical-align: middle;
  }
- .lang span:last-child {
+
+.lang span:last-child {
      font-size: 10px;
  }
 
- .lang:hover {
+.lang:hover {
      cursor: pointer
  }
 
